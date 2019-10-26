@@ -1,126 +1,4 @@
-﻿.tipsy {
-	font-size: 10px;
-	position: absolute;
-	padding: 5px;
-	word-wrap: break-word;
-	z-index: 100000
-}
-
-.tipsy-inner {
-	background-color: #000;
-	color: #FFF;
-	max-width: 200px;
-	padding: 5px 8px 4px 8px;
-	text-align: center
-}
-
-.tipsy-inner {
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-
-.tipsy-arrow {
-	position: absolute;
-	width: 0;
-	height: 0;
-	line-height: 0;
-	border: 5px dashed #000
-}
-
-.tipsy-arrow-n {
-	border-bottom-color: #000
-}
-
-.tipsy-arrow-s {
-	border-top-color: #000
-}
-
-.tipsy-arrow-e {
-	border-left-color: #000
-}
-
-.tipsy-arrow-w {
-	border-right-color: #000
-}
-
-.tipsy-n .tipsy-arrow {
-	top: 0px;
-	left: 50%;
-	margin-left: -5px;
-	border-bottom-style: solid;
-	border-top: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-nw .tipsy-arrow {
-	top: 0;
-	left: 10px;
-	border-bottom-style: solid;
-	border-top: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-ne .tipsy-arrow {
-	top: 0;
-	right: 10px;
-	border-bottom-style: solid;
-	border-top: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-s .tipsy-arrow {
-	bottom: 0;
-	left: 50%;
-	margin-left: -5px;
-	border-top-style: solid;
-	border-bottom: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-sw .tipsy-arrow {
-	bottom: 0;
-	left: 10px;
-	border-top-style: solid;
-	border-bottom: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-se .tipsy-arrow {
-	bottom: 0;
-	right: 10px;
-	border-top-style: solid;
-	border-bottom: none;
-	border-left-color: transparent;
-	border-right-color: transparent
-}
-
-.tipsy-e .tipsy-arrow {
-	right: 0;
-	top: 50%;
-	margin-top: -5px;
-	border-left-style: solid;
-	border-right: none;
-	border-top-color: transparent;
-	border-bottom-color: transparent
-}
-
-.tipsy-w .tipsy-arrow {
-	left: 0;
-	top: 50%;
-	margin-top: -5px;
-	border-right-style: solid;
-	border-left: none;
-	border-top-color: transparent;
-	border-bottom-color: transparent
-}
-
-#jquery-clipster-overlay {
+﻿#jquery-clipster-overlay {
 	position: fixed;
 	z-index: 10000;
 	left: 0px;
@@ -192,271 +70,6 @@ html:hover [class^="ss-"] {
 	content: ""
 }
 
-.ss-facebook:before,
-.ss-facebook.right:after {
-	content: ""
-}
-
-.ss-twitter:before,
-.ss-twitter.right:after {
-	content: ""
-}
-
-.ss-linkedin:before,
-.ss-linkedin.right:after {
-	content: ""
-}
-
-.ss-googleplus:before,
-.ss-googleplus.right:after {
-	content: ""
-}
-
-.ss-appdotnet:before,
-.ss-appdotnet.right:after {
-	content: ""
-}
-
-.ss-zerply:before,
-.ss-zerply.right:after {
-	content: ""
-}
-
-.ss-reddit:before,
-.ss-reddit.right:after {
-	content: ""
-}
-
-.ss-steam:before,
-.ss-steam.right:after {
-	content: ""
-}
-
-.ss-tumblr:before,
-.ss-tumblr.right:after {
-	content: ""
-}
-
-.ss-wordpress:before,
-.ss-wordpress.right:after {
-	content: ""
-}
-
-.ss-blogger:before,
-.ss-blogger.right:after {
-	content: ""
-}
-
-.ss-posterous:before,
-.ss-posterous.right:after {
-	content: ""
-}
-
-.ss-quora:before,
-.ss-quora.right:after {
-	content: ""
-}
-
-.ss-youtube:before,
-.ss-youtube.right:after {
-	content: ""
-}
-
-.ss-vimeo:before,
-.ss-vimeo.right:after {
-	content: ""
-}
-
-.ss-vine:before,
-.ss-vine.right:after {
-	content: ""
-}
-
-.ss-letterboxd:before,
-.ss-letterboxd.right:after {
-	content: ""
-}
-
-.ss-flickr:before,
-.ss-flickr.right:after {
-	content: ""
-}
-
-.ss-instagram:before,
-.ss-instagram.right:after {
-	content: ""
-}
-
-.ss-500px:before,
-.ss-500px.right:after {
-	content: ""
-}
-
-.ss-etsy:before,
-.ss-etsy.right:after {
-	content: ""
-}
-
-.ss-pinterest:before,
-.ss-pinterest.right:after {
-	content: ""
-}
-
-.ss-svpply:before,
-.ss-svpply.right:after {
-	content: ""
-}
-
-.ss-readmill:before,
-.ss-readmill.right:after {
-	content: ""
-}
-
-.ss-dropbox:before,
-.ss-dropbox.right:after {
-	content: ""
-}
-
-.ss-pinboard:before,
-.ss-pinboard.right:after {
-	content: ""
-}
-
-.ss-delicious:before,
-.ss-delicious.right:after {
-	content: ""
-}
-
-.ss-dribbble:before,
-.ss-dribbble.right:after {
-	content: ""
-}
-
-.ss-behance:before,
-.ss-behance.right:after {
-	content: ""
-}
-
-.ss-github:before,
-.ss-github.right:after {
-	content: ""
-}
-
-.ss-octocat:before,
-.ss-octocat.right:after {
-	content: ""
-}
-
-.ss-stackoverflow:before,
-.ss-stackoverflow.right:after {
-	content: ""
-}
-
-.ss-paypal:before,
-.ss-paypal.right:after {
-	content: ""
-}
-
-.ss-kickstarter:before,
-.ss-kickstarter.right:after {
-	content: ""
-}
-
-.ss-foursquare:before,
-.ss-foursquare.right:after {
-	content: ""
-}
-
-.ss-yelp:before,
-.ss-yelp.right:after {
-	content: ""
-}
-
-.ss-skype:before,
-.ss-skype.right:after {
-	content: ""
-}
-
-.ss-rdio:before,
-.ss-rdio.right:after {
-	content: ""
-}
-
-.ss-spotify:before,
-.ss-spotify.right:after {
-	content: ""
-}
-
-.ss-lastfm:before,
-.ss-lastfm.right:after {
-	content: ""
-}
-
-.ss-soundcloud:before,
-.ss-soundcloud.right:after {
-	content: ""
-}
-
-.ss-link:before,
-.ss-link.right:after {
-	content: "🔗"
-}
-
-.ss-phone:before,
-.ss-phone.right:after {
-	content: "📞"
-}
-
-.ss-mail:before,
-.ss-mail.right:after {
-	content: "✉"
-}
-
-.ss-like:before,
-.ss-like.right:after {
-	content: "👍"
-}
-
-.ss-rss:before,
-.ss-rss.right:after {
-	content: ""
-}
-
-.ss-share:before,
-.ss-share.right:after {
-	content: ""
-}
-
-.ss-apple:before,
-.ss-apple.right:after {
-	content: ""
-}
-
-.ss-microsoft:before,
-.ss-microsoft.right:after {
-	content: ""
-}
-
-.ss-windows:before,
-.ss-windows.right:after {
-	content: ""
-}
-
-.ss-android:before,
-.ss-android.right:after {
-	content: ""
-}
-
-.ss-blackberry:before,
-.ss-blackberry.right:after {
-	content: ""
-}
-
-.ss-fivehundredpx:before,
-.ss-fivehundredpx.right:after {
-	content: ""
-}
-
 @font-face {
 	font-family: "SSSocialCircle";
 	src: url(/assets/symbolset/ss-social-circle-6c30c2e1f226dc45d1d2903d02d074e71c620ba187d0d181ce49a9036254e677.eot);
@@ -497,271 +110,6 @@ html:hover [class^="ss-"] {
 [class*=" ss-"].right:before {
 	display: none;
 	content: ""
-}
-
-.ss-facebook:before,
-.ss-facebook.right:after {
-	content: ""
-}
-
-.ss-twitter:before,
-.ss-twitter.right:after {
-	content: ""
-}
-
-.ss-linkedin:before,
-.ss-linkedin.right:after {
-	content: ""
-}
-
-.ss-googleplus:before,
-.ss-googleplus.right:after {
-	content: ""
-}
-
-.ss-appdotnet:before,
-.ss-appdotnet.right:after {
-	content: ""
-}
-
-.ss-zerply:before,
-.ss-zerply.right:after {
-	content: ""
-}
-
-.ss-reddit:before,
-.ss-reddit.right:after {
-	content: ""
-}
-
-.ss-steam:before,
-.ss-steam.right:after {
-	content: ""
-}
-
-.ss-tumblr:before,
-.ss-tumblr.right:after {
-	content: ""
-}
-
-.ss-wordpress:before,
-.ss-wordpress.right:after {
-	content: ""
-}
-
-.ss-blogger:before,
-.ss-blogger.right:after {
-	content: ""
-}
-
-.ss-posterous:before,
-.ss-posterous.right:after {
-	content: ""
-}
-
-.ss-quora:before,
-.ss-quora.right:after {
-	content: ""
-}
-
-.ss-youtube:before,
-.ss-youtube.right:after {
-	content: ""
-}
-
-.ss-vimeo:before,
-.ss-vimeo.right:after {
-	content: ""
-}
-
-.ss-vine:before,
-.ss-vine.right:after {
-	content: ""
-}
-
-.ss-letterboxd:before,
-.ss-letterboxd.right:after {
-	content: ""
-}
-
-.ss-flickr:before,
-.ss-flickr.right:after {
-	content: ""
-}
-
-.ss-instagram:before,
-.ss-instagram.right:after {
-	content: ""
-}
-
-.ss-500px:before,
-.ss-500px.right:after {
-	content: ""
-}
-
-.ss-etsy:before,
-.ss-etsy.right:after {
-	content: ""
-}
-
-.ss-pinterest:before,
-.ss-pinterest.right:after {
-	content: ""
-}
-
-.ss-svpply:before,
-.ss-svpply.right:after {
-	content: ""
-}
-
-.ss-readmill:before,
-.ss-readmill.right:after {
-	content: ""
-}
-
-.ss-dropbox:before,
-.ss-dropbox.right:after {
-	content: ""
-}
-
-.ss-pinboard:before,
-.ss-pinboard.right:after {
-	content: ""
-}
-
-.ss-delicious:before,
-.ss-delicious.right:after {
-	content: ""
-}
-
-.ss-dribbble:before,
-.ss-dribbble.right:after {
-	content: ""
-}
-
-.ss-behance:before,
-.ss-behance.right:after {
-	content: ""
-}
-
-.ss-github:before,
-.ss-github.right:after {
-	content: ""
-}
-
-.ss-octocat:before,
-.ss-octocat.right:after {
-	content: ""
-}
-
-.ss-stackoverflow:before,
-.ss-stackoverflow.right:after {
-	content: ""
-}
-
-.ss-paypal:before,
-.ss-paypal.right:after {
-	content: ""
-}
-
-.ss-kickstarter:before,
-.ss-kickstarter.right:after {
-	content: ""
-}
-
-.ss-foursquare:before,
-.ss-foursquare.right:after {
-	content: ""
-}
-
-.ss-yelp:before,
-.ss-yelp.right:after {
-	content: ""
-}
-
-.ss-skype:before,
-.ss-skype.right:after {
-	content: ""
-}
-
-.ss-rdio:before,
-.ss-rdio.right:after {
-	content: ""
-}
-
-.ss-spotify:before,
-.ss-spotify.right:after {
-	content: ""
-}
-
-.ss-lastfm:before,
-.ss-lastfm.right:after {
-	content: ""
-}
-
-.ss-soundcloud:before,
-.ss-soundcloud.right:after {
-	content: ""
-}
-
-.ss-link:before,
-.ss-link.right:after {
-	content: "🔗"
-}
-
-.ss-phone:before,
-.ss-phone.right:after {
-	content: "📞"
-}
-
-.ss-mail:before,
-.ss-mail.right:after {
-	content: "✉"
-}
-
-.ss-like:before,
-.ss-like.right:after {
-	content: "👍"
-}
-
-.ss-rss:before,
-.ss-rss.right:after {
-	content: ""
-}
-
-.ss-share:before,
-.ss-share.right:after {
-	content: ""
-}
-
-.ss-apple:before,
-.ss-apple.right:after {
-	content: ""
-}
-
-.ss-microsoft:before,
-.ss-microsoft.right:after {
-	content: ""
-}
-
-.ss-windows:before,
-.ss-windows.right:after {
-	content: ""
-}
-
-.ss-android:before,
-.ss-android.right:after {
-	content: ""
-}
-
-.ss-blackberry:before,
-.ss-blackberry.right:after {
-	content: ""
-}
-
-.ss-fivehundredpx:before,
-.ss-fivehundredpx.right:after {
-	content: ""
 }
 
 @font-face {
@@ -1030,26 +378,6 @@ html:hover [class^="ss-"] {
 .ss-backer:before,
 .ss-backer.right:after {
 	content: ""
-}
-
-.ss-facebook:before,
-.ss-facebook.right:after {
-	content: ""
-}
-
-.ss-twitter:before,
-.ss-twitter.right:after {
-	content: ""
-}
-
-.ss-kickstarter:before,
-.ss-kickstarter.right:after {
-	content: ""
-}
-
-.ss-rss:before,
-.ss-rss.right:after {
-	content: ""
 }
 
 .liquid-container {
@@ -2147,109 +1475,6 @@ form.overlabels .field.search .ss-search {
 
 form.overlabels .field.search .ss-delete {
 	display: none
-}
-
-#credit_card_form input[type="text"],
-#credit_card_form textarea,
-#credit_card_form select,
-#new_sepa_account_form input[type="text"],
-#new_sepa_account_form textarea,
-#new_sepa_account_form select,
-ol.refund_checkouts_form input[type="text"],
-ol.refund_checkouts_form textarea,
-ol.refund_checkouts_form select {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box
-}
-
-#credit_card_form select,
-#new_sepa_account_form select,
-ol.refund_checkouts_form select {
-	background: #fff url(/assets/library/forms/select-arrow-74f44df2c6283696b97945d227cfaaea765317df5b94de6061b720631ec1c216.png) no-repeat right center;
-	border: 1px solid #F1EEEA;
-	-webkit-appearance: none
-}
-
-#credit_card_form select:focus,
-#new_sepa_account_form select:focus,
-ol.refund_checkouts_form select:focus {
-	background: url(/assets/library/forms/select-arrow-focus-ea401a49d95f0e7ccc808e98e171564c26431d0d7417fa3a04bf45ce751656cd.png) no-repeat right center
-}
-
-#credit_card_form li.invalid input[type="text"],
-#credit_card_form li.invalid textarea,
-#credit_card_form li.invalid select,
-#credit_card_form .field_with_errors input[type="text"],
-#credit_card_form .field_with_errors textarea,
-#credit_card_form .field_with_errors select,
-#new_sepa_account_form li.invalid input[type="text"],
-#new_sepa_account_form li.invalid textarea,
-#new_sepa_account_form li.invalid select,
-#new_sepa_account_form .field_with_errors input[type="text"],
-#new_sepa_account_form .field_with_errors textarea,
-#new_sepa_account_form .field_with_errors select,
-ol.refund_checkouts_form li.invalid input[type="text"],
-ol.refund_checkouts_form li.invalid textarea,
-ol.refund_checkouts_form li.invalid select,
-ol.refund_checkouts_form .field_with_errors input[type="text"],
-ol.refund_checkouts_form .field_with_errors textarea,
-ol.refund_checkouts_form .field_with_errors select {
-	background: #ffecf0;
-	border-color: #fd003b
-}
-
-#credit_card_form li.invalid input[type="text"]#card_accountNumber,
-#credit_card_form li.invalid textarea#card_accountNumber,
-#credit_card_form li.invalid select#card_accountNumber,
-#credit_card_form .field_with_errors input[type="text"]#card_accountNumber,
-#credit_card_form .field_with_errors textarea#card_accountNumber,
-#credit_card_form .field_with_errors select#card_accountNumber,
-#new_sepa_account_form li.invalid input[type="text"]#card_accountNumber,
-#new_sepa_account_form li.invalid textarea#card_accountNumber,
-#new_sepa_account_form li.invalid select#card_accountNumber,
-#new_sepa_account_form .field_with_errors input[type="text"]#card_accountNumber,
-#new_sepa_account_form .field_with_errors textarea#card_accountNumber,
-#new_sepa_account_form .field_with_errors select#card_accountNumber,
-ol.refund_checkouts_form li.invalid input[type="text"]#card_accountNumber,
-ol.refund_checkouts_form li.invalid textarea#card_accountNumber,
-ol.refund_checkouts_form li.invalid select#card_accountNumber,
-ol.refund_checkouts_form .field_with_errors input[type="text"]#card_accountNumber,
-ol.refund_checkouts_form .field_with_errors textarea#card_accountNumber,
-ol.refund_checkouts_form .field_with_errors select#card_accountNumber {
-	background: url(/assets/payment_sources/icon-cc-valid-ba459707aea3aac6e79ffb1c9c1b3256a1089eefbc1146547f15a3e59e8d57de.png) no-repeat 335px center #ffecf0
-}
-
-#credit_card_form li.invalid input[type="text"]#card_accountNumber.valid,
-#credit_card_form li.invalid textarea#card_accountNumber.valid,
-#credit_card_form li.invalid select#card_accountNumber.valid,
-#credit_card_form .field_with_errors input[type="text"]#card_accountNumber.valid,
-#credit_card_form .field_with_errors textarea#card_accountNumber.valid,
-#credit_card_form .field_with_errors select#card_accountNumber.valid,
-#new_sepa_account_form li.invalid input[type="text"]#card_accountNumber.valid,
-#new_sepa_account_form li.invalid textarea#card_accountNumber.valid,
-#new_sepa_account_form li.invalid select#card_accountNumber.valid,
-#new_sepa_account_form .field_with_errors input[type="text"]#card_accountNumber.valid,
-#new_sepa_account_form .field_with_errors textarea#card_accountNumber.valid,
-#new_sepa_account_form .field_with_errors select#card_accountNumber.valid,
-ol.refund_checkouts_form li.invalid input[type="text"]#card_accountNumber.valid,
-ol.refund_checkouts_form li.invalid textarea#card_accountNumber.valid,
-ol.refund_checkouts_form li.invalid select#card_accountNumber.valid,
-ol.refund_checkouts_form .field_with_errors input[type="text"]#card_accountNumber.valid,
-ol.refund_checkouts_form .field_with_errors textarea#card_accountNumber.valid,
-ol.refund_checkouts_form .field_with_errors select#card_accountNumber.valid {
-	background-position: 306px center
-}
-
-#credit_card_form li.invalid select,
-#credit_card_form .field_with_errors select,
-#new_sepa_account_form li.invalid select,
-#new_sepa_account_form .field_with_errors select,
-ol.refund_checkouts_form li.invalid select,
-ol.refund_checkouts_form .field_with_errors select {
-	background: #ffecf0 url(/assets/library/forms/select-arrow-error-05dda5cf28bb523a79b46902444fb36762e1cfd2aa7dd79dfd75bdba2614adf2.png) no-repeat right center
 }
 
 form.search.term {
@@ -6248,13 +5473,6 @@ body#admin_users_show .actions li a {
 	text-align: center
 }
 
-body#admin_users_show #facebook-login {
-	margin: 15px 0;
-	background: #F0F0F0;
-	border: 1px solid #F1EEEA;
-	padding: 9px
-}
-
 body#admin_users_show #event-filters {
 	margin: 0 0 10px 0;
 	padding: 0 0 3px 0;
@@ -7583,18 +6801,6 @@ body#backer_rewards_index.tablet .view_more {
 
 .bg-blue-dark {
 	background-color: #060F46
-}
-
-.color-facebook {
-	color: #3b5998
-}
-
-.color-twitter {
-	color: #00aced
-}
-
-.color-tumblr {
-	color: #38475B
 }
 
 .red {
@@ -10203,18 +9409,6 @@ body#country_signups_singapore #main .newsletter-signup {
 
 .bg-blue-dark {
 	background-color: #060F46
-}
-
-.color-facebook {
-	color: #3b5998
-}
-
-.color-twitter {
-	color: #00aced
-}
-
-.color-tumblr {
-	color: #38475B
 }
 
 .red {
@@ -14093,10 +13287,6 @@ form#new_flagging #details-ip_infringement p {
 .services_big .friends_tout.find small {
 	width: 240px;
 	background: rgba(255, 255, 145, 0.85)
-}
-
-.services_big .friends_tout.facebook {
-	padding: 15px 0px
 }
 
 .friends-tout--no-friends {
@@ -25176,35 +24366,6 @@ body#projects_rules #account-setup-panel .NS-phone_numbers__edit .code_section i
 	margin-right: 3px
 }
 
-.project-share .project-share__icon.svg-icon__twitter {
-	width: 13px;
-	height: 13px
-}
-
-.project-share .project-share__icon.svg-icon__facebook {
-	width: 13px;
-	height: 11px;
-	vertical-align: -1px
-}
-
-.project-share .project-share__icon.svg-icon__embed {
-	width: 17px;
-	height: 11px;
-	vertical-align: -1px
-}
-
-.project-share .project-share__icon.svg-icon__pinterest {
-	width: 13px;
-	height: 13px;
-	vertical-align: -1px
-}
-
-.project-share .project-share__icon.svg-icon__tumblr {
-	width: 9px;
-	height: 11px;
-	vertical-align: -1px
-}
-
 .clearfix {
 	*zoom: 1
 }
@@ -29257,61 +28418,6 @@ body#projects_edit #the-story-panel .grey-field .wym_box {
 body#projects_edit #the-story-panel .risks textarea {
 	height: 150px;
 	width: 494px
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper {
-	padding: 9px 0 10px
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper .connect-to-facebook {
-	padding: 2px 0
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper .disconnect-from-facebook p {
-	background: url(/assets/projects/icon-creators-efd7400a170f76ed71f3da5ce7b1dac61a179f42296644bbac544fb58a3b6ac6.gif) no-repeat 0px -131px;
-	font-size: 12px;
-	font-weight: bold;
-	height: 16px;
-	line-height: 20px;
-	margin: 0 0 0 11px;
-	padding-left: 28px
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper .disconnect-from-facebook p a {
-	font-size: 12px;
-	font-weight: normal;
-	padding-left: 5px
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper .reconnect-to-facebook {
-	height: 32px
-}
-
-body#projects_edit #about-you-panel .facebook .field-wrapper .connect-to-facebook .fb-login-button {
-	display: -moz-inline-box;
-	display: -moz-inline-stack;
-	-moz-box-orient: vertical;
-	display: inline-block;
-	vertical-align: middle;
-	zoom: 1;
-	*display: inline
-}
-
-body#projects_edit #about-you-panel .biography textarea {
-	height: 150px
-}
-
-body#projects_edit #about-you-panel .NS-users-_urls_fields {
-	overflow: hidden;
-	*zoom: 1
-}
-
-body#projects_edit #about-you-panel .NS-users-_urls_fields input {
-	width: 320px
-}
-
-body#projects_edit #account-setup-panel iframe {
-	overflow: hidden
 }
 
 body#projects_edit #preview #share_a_link {
@@ -35813,18 +34919,6 @@ body.ipad .ipad-hide {
 	background-color: #060F46
 }
 
-.color-facebook {
-	color: #3b5998
-}
-
-.color-twitter {
-	color: #00aced
-}
-
-.color-tumblr {
-	color: #38475B
-}
-
 .red {
 	color: #fd003b
 }
@@ -37214,10 +36308,6 @@ p {
 	content: "\f113"
 }
 
-.ksr-icon__facebook:before {
-	content: "\f114"
-}
-
 .ksr-icon__flag:before {
 	content: "\f115"
 }
@@ -38273,102 +37363,6 @@ p {
 .btn--with-svg.btn--small [class^="svg-icon__"] {
 	width: 10px;
 	height: 10px
-}
-
-.btn--facebook {
-	background-color: #3b5998;
-	color: #FFFFFF
-}
-
-.btn--facebook:hover,
-.btn--facebook:focus {
-	background-color: #30487b;
-	color: #FFFFFF
-}
-
-.btn--twitter {
-	background-color: #00aced;
-	color: #FFFFFF
-}
-
-.btn--twitter:hover,
-.btn--twitter:focus {
-	background-color: #009dd9;
-	color: #FFFFFF
-}
-
-.btn--tumblr {
-	background-color: #38475B;
-	color: #FFFFFF
-}
-
-.btn--tumblr:hover,
-.btn--tumblr:focus {
-	background-color: #303d4e;
-	color: #FFFFFF
-}
-
-.btn--pinterest {
-	background-color: #bd081c;
-	color: #FFFFFF
-}
-
-.btn--pinterest:hover,
-.btn--pinterest:focus {
-	background-color: #a90719;
-	color: #FFFFFF
-}
-
-.btn--like:not(.btn--liked),
-.btn--like-text:not(.btn--liked) {
-	color: #3D3D66
-}
-
-.btn--like:not(.btn--liked) .ksr-icon__heart,
-.btn--like-text:not(.btn--liked) .ksr-icon__heart {
-	font-size: 12px
-}
-
-.btn--like:not(.btn--liked):hover,
-.btn--like:not(.btn--liked):focus,
-.btn--like-text:not(.btn--liked):hover,
-.btn--like-text:not(.btn--liked):focus {
-	color: #020621
-}
-
-.btn--like:not(.btn--liked):hover .ksr-icon__heart,
-.btn--like:not(.btn--liked):focus .ksr-icon__heart,
-.btn--like-text:not(.btn--liked):hover .ksr-icon__heart,
-.btn--like-text:not(.btn--liked):focus .ksr-icon__heart {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
-	color: #fd003b
-}
-
-.btn--like .ksr-icon__heart,
-.btn--like-text .ksr-icon__heart {
-	font-size: 12px
-}
-
-.btn--like {
-	background-color: #F0F0F0;
-	font-weight: bold
-}
-
-.btn--like-text {
-	background: transparent
-}
-
-.btn--like-text.btn--liked {
-	color: #009E74
-}
-
-.btn--like-text.btn--liked:hover,
-.btn--like-text.btn--liked:focus {
-	color: #006b4f
 }
 
 .btn--round {
@@ -40140,7 +39134,7 @@ p {
 }
 
 .pledge--available {
-	cursor: pointer
+	/* cursor: pointer */
 }
 
 .pledge--available .pledge__hover {
@@ -40478,7 +39472,8 @@ p {
 
 .pledge__backer-stats {
 	color: #656969;
-	margin-top: 1.8rem
+	margin-top: 1.8rem;
+	margin-bottom: 1.3rem;
 }
 
 .pledge__limit,
@@ -43441,17 +42436,6 @@ textarea.resources-submission__textarea {
 	margin-bottom: 7px
 }
 
-.default-share-controls__twitter {
-	display: inline-block
-}
-
-.default-share-controls__facebook {
-	display: inline-block;
-	margin-right: 10px;
-	position: relative;
-	top: -5px
-}
-
 .scroll-row {
 	position: relative;
 	padding-left: 40px
@@ -45621,6 +44605,13 @@ strong {
 	color: #FFFFFF !important
 }
 
+.smolbutton {
+	max-width: 20%;
+	text-decoration: none;
+	margin-bottom: 0;
+	margin-top: 1.3rem;
+}
+
 .bttn-green:hover:not(:disabled) {
 	background-color: #037362;
 	color: #FFFFFF
@@ -45695,26 +44686,6 @@ strong {
 .bttn-studio-electric-green {
 	background-color: #3ED2A1;
 	color: #FFFFFF !important
-}
-
-.bttn-facebook {
-	background-color: #39579A;
-	color: #FFFFFF
-}
-
-.bttn-facebook:hover:not(:disabled) {
-	background-color: #344E86;
-	color: #FFFFFF
-}
-
-.bttn-twitter {
-	background-color: #00ABF0;
-	color: #FFFFFF
-}
-
-.bttn-twitter:hover:not(:disabled) {
-	background-color: #0C85D0;
-	color: #FFFFFF
 }
 
 .bttn-conferences-blue {
@@ -46865,14 +45836,6 @@ strong {
 	color: rgba(255, 140, 140, 0.2)
 }
 
-.hover-twitter-blue:hover {
-	color: #00ABF0
-}
-
-.hover-facebook-blue:hover {
-	color: #39579A
-}
-
 .hover-ksr10-coral-light:hover {
 	color: #F9EFEC
 }
@@ -47257,14 +46220,6 @@ strong {
 	background-color: rgba(255, 140, 140, 0.2)
 }
 
-.hover-bg-twitter-blue:hover {
-	background-color: #00ABF0
-}
-
-.hover-bg-facebook-blue:hover {
-	background-color: #39579A
-}
-
 .hover-bg-ksr10-coral-light:hover {
 	background-color: #F9EFEC
 }
@@ -47645,14 +46600,6 @@ strong {
 	border-color: rgba(255, 140, 140, 0.2) !important
 }
 
-.hover-border-twitter-blue:hover {
-	border-color: #00ABF0 !important
-}
-
-.hover-border-facebook-blue:hover {
-	border-color: #39579A !important
-}
-
 .hover-border-ksr10-coral-light:hover {
 	border-color: #F9EFEC !important
 }
@@ -48013,14 +46960,6 @@ strong {
 	fill: rgba(255, 140, 140, 0.2)
 }
 
-.hover-fill-twitter-blue:hover {
-	fill: #00ABF0
-}
-
-.hover-fill-facebook-blue:hover {
-	fill: #39579A
-}
-
 .hover-fill-ksr10-coral-light:hover {
 	fill: #F9EFEC
 }
@@ -48359,14 +47298,6 @@ strong {
 
 .hover-stroke-tangerine-600_20:hover {
 	stroke: rgba(255, 140, 140, 0.2)
-}
-
-.hover-stroke-twitter-blue:hover {
-	stroke: #00ABF0
-}
-
-.hover-stroke-facebook-blue:hover {
-	stroke: #39579A
 }
 
 .hover-stroke-ksr10-coral-light:hover {
@@ -48717,14 +47648,6 @@ strong {
 	color: rgba(255, 140, 140, 0.2)
 }
 
-.hover-target:hover .hover-item-twitter-blue {
-	color: #00ABF0
-}
-
-.hover-target:hover .hover-item-facebook-blue {
-	color: #39579A
-}
-
 .hover-target:hover .hover-item-ksr10-coral-light {
 	color: #F9EFEC
 }
@@ -49063,14 +47986,6 @@ strong {
 
 .hover-target:hover .hover-item-fill-tangerine-600_20 {
 	fill: rgba(255, 140, 140, 0.2)
-}
-
-.hover-target:hover .hover-item-fill-twitter-blue {
-	fill: #00ABF0
-}
-
-.hover-target:hover .hover-item-fill-facebook-blue {
-	fill: #39579A
 }
 
 .hover-target:hover .hover-item-fill-ksr10-coral-light {
@@ -52809,14 +51724,6 @@ strong {
 
 .tangerine-600_20 {
 	color: rgba(255, 140, 140, 0.2)
-}
-
-.twitter-blue {
-	color: #00ABF0
-}
-
-.facebook-blue {
-	color: #39579A
 }
 
 .ksr10-coral-light {
@@ -80681,7 +79588,6 @@ input[type="text"].atomic-text-year-input:focus:-ms-input-placeholder {
 
 .rte__content a {
 	color: #9B9E9E;
-	text-decoration: underline
 }
 
 .rte__content p {
