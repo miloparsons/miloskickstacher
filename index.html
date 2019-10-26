@@ -16,7 +16,6 @@
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/MaisonNeueWEB-Book.woff2" rel="preload" type="font/woff2">
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfont.woff" rel="preload" type="font/woff">
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfont.woff2" rel="preload" type="font/woff2">
-
     <link rel="stylesheet" media="screen,print" href="base.css">
 
     <link href="https://a.kickstarter.com/favicon.ico" rel="icon" type="image/x-icon">
@@ -305,17 +304,51 @@
                                 </div>
                                 <div class="grid-col-12 grid-col-4-md hide block-lg">
                                     <div class="bg-grey-400 w100p mb3" role="progressbar" aria-valuenow="245" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="bg-ksr-green-500 h1 " style="width: 100%;"></div>
+                                        <div class="bg-ksr-green-500 h1" id="progbar" style="width: 0%;"></div>
                                     </div>
                                     <div class="flex flex-column-lg mb4 mb5-sm">
                                         <div class="mb4-lg">
                                             <div class="num nowrap"></div>
-                                            <div class="flex items-center"><span class="ksr-green-700 inline-block bold type-16 type-28-md"><span class="ksr-green-500">£0</span></span>
-                                            </div><span class="block dark-grey-500 type-12 type-14-md lh3-lg"><span class="inline-block hide-sm">pledged of <span class="money">£500</span></span><span class="inline-block-sm hide">pledged of <span class="money">£500</span> goal</span>
+                                            <div class="flex items-center"><span class="ksr-green-500 inline-block bold type-16 type-28-md">£<span class="ksr-green-500" id="pled_m">0</span></span>
+                                            </div><span class="block dark-grey-500 type-12 type-14-md lh3-lg"><span class="inline-block hide-sm">pledged of £<span class="money">0</span></span><span class="inline-block-sm hide">pledged of £<span class="money" id ="goal_m">0</span> goal</span>
+                                            <div>
+                                            </div>
                                             </span>
                                         </div>
                                         <div class="ml5 ml0-lg mb4-lg">
-                                            <div class="block type-16 type-28-md bold dark-grey-500"><span>0</span></div><span class="block dark-grey-500 type-12 type-14-md lh3-lg">backers</span></div>
+                                            <div class="block type-16 type-28-md bold dark-grey-500" id="back_m"><span>0</span></div><span class="block dark-grey-500 type-12 type-14-md lh3-lg">backers</span></div>
+                                            <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'>
+                                            </script>
+                                            <script type='text/javascript'>    
+                                            var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1KYilUfc-v3ys6uWxb-t_F5uBWaxWYNPQvX4ntkYLxvU/pubhtml';
+
+                                            function init() {
+                                                Tabletop.init( { key: publicSpreadsheetUrl,
+                                                                callback: showInfo,
+                                                                simpleSheet: true } )
+                                            }
+
+                                            function showInfo(data, tabletop) {
+                                                alert('Successfully processed!')
+                                                console.log(data);
+                                            }
+
+                                            window.addEventListener('DOMContentLoaded', init)
+
+                                            function showInfo(data) {
+                                                var am = [data[0].Total]
+                                                var go = [data[0].Goal]
+                                                var bk = [data[0].Backers]
+                                                document.getElementById("pled_m").innerHTML = am;
+                                                document.getElementById("goal_m").innerHTML = go;
+                                                document.getElementById("back_m").innerHTML = bk;
+                                                var prog = (am / go) * 100;
+                                                console.log(am)
+                                                console.log(go)
+                                                console.log(prog)
+                                            document.getElementById("progbar").style.width = (prog + '%')
+                                            }
+                                            </script>
                                         <div class="ml5 ml0-lg">
                                             <div>
                                                 <div><span class="block type-16 type-28-md bold dark-grey-500" id="d2g">30</span><span class="block navy-600 type-12 type-14-md lh3-lg">days to go</span></div>
@@ -366,7 +399,7 @@
                                         <div class="mb4-lg">
                                             <div class="num nowrap"></div>
                                             <div class="flex items-center"><span class="ksr-green-700 inline-block bold type-16 type-28-md"><span class="ksr-green-500">£0</span></span>
-                                            </div><span class="block dark-grey-500 type-12 type-14-md lh3-lg"><span class="inline-block hide-sm">pledged of <span class="money">£500</span></span><span class="inline-block-sm hide">pledged of <span class="money">£500</span> goal</span>
+                                            </div><span class="block dark-grey-500 type-12 type-14-md lh3-lg"><span class="inline-block hide-sm">pledged of £<span class="money">0</span></span><span class="inline-block-sm hide">pledged of £<span class="money">0</span> goal</span>
                                             </span>
                                         </div>
                                         <div class="ml5 ml0-lg mb4-lg">
@@ -375,10 +408,6 @@
                                             <div>
                                                 <div><span class="block type-16 type-28-md bold dark-grey-500" id="d2gm">30</span><span class="block navy-600 type-12 type-14-md lh3-lg">days to go</span></div>
                                             </div>
-                                            <script type="text/javascript">
-                                                var d = new Date();
-                                                document.getElementById("dg").innerHTML = d.getTime();
-                                            </script>
                                         </div>
                                     </div>
                                 </div>
