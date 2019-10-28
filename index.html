@@ -16,7 +16,7 @@
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/MaisonNeueWEB-Book.woff2" rel="preload" type="font/woff2">
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfont.woff" rel="preload" type="font/woff">
     <link as="font" crossorigin="anonymous" href="https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfont.woff2" rel="preload" type="font/woff2">
-    <link rel="stylesheet" media="screen,print" href="base.css">
+    <link rel="stylesheet" media="screen,print" href="/Users/mparsons/Desktop/Mov_Kick/base.css">
 
     <!-- <link rel="stylesheet" media="screen,print" href="base.css"> -->
 
@@ -62,7 +62,9 @@
             </div>
             <div></div>
             <section class="section_global_nav_logo flex items-center justify-center order-2 py4 py2-md grow-5 grow-0-md w100p w-auto-md item-full-width h7-md h5 border-bottom border-none-md relative">
-                <a class="keyboard-focusable mb0 w30" href="https://www.kickstarter.com/?ref=nav">
+                        <img src="https://i.ibb.co/tptbMPX/MOVEMSTARTER.png" class="movem">
+
+<!--                 <a class="keyboard-focusable mb0 w30" href="https://www.kickstarter.com/?ref=nav">
                     <svg class="valign-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598 70" width="100%" height="100%">
                         <title>Kickstarter</title>
                         <g class="fill-ksr10-green" fill-rule="nonzero">
@@ -79,7 +81,7 @@
                             <path d="M54,46.5662429 C54,43.7802283 53.1940299,41.0937143 51.4813433,38.7057019 L45.0335821,29.8501557 L51.4813433,20.9946095 C53.1940299,18.7060976 54,15.920083 54,13.1340685 C54,5.7710301 47.8544776,0.0995005189 40.6007463,0.0995005189 C36.369403,0.0995005189 32.1380597,2.18901142 29.5186567,5.7710301 L26.2947761,10.1490529 C25.0858209,4.27852231 19.9477612,0 13.3992537,0 C5.84328358,0 0,5.97003114 0,13.3330695 L0,46.6657434 C0,54.0287818 5.94402985,59.9988129 13.3992537,59.9988129 C19.8470149,59.9988129 24.8843284,56.0187922 26.1940299,50.2477621 L29.0149254,54.2277828 C31.6343284,58.0088025 35.9664179,59.9988129 40.1977612,59.9988129 C47.8544776,60.0983134 54,53.9292813 54,46.5662429"></path>
                         </g>
                     </svg>
-                </a>
+                </a> -->
             </section>
             <section class="section_global-nav-left order-2 order-1-md flex grow-1-md pl3 pl4-md py2 basis50p-md">
                 <a href="https://uk.movember.com/register" class="hide pr3 mr2 flex-sm items-center keyboard-focusable soft-black hover-ksr-green-700"><strong></strong>Sign up for Movember</a></section>
@@ -438,6 +440,44 @@
                                                                         As if the impact of having a moustache growing on my face for a whole month wasn't enough, I'll get a t-shirt printed with your face on it accompanied by the words "This person is generous". I'll wear this around the office for a <i>whole day</i>.
                                                                     </p>
                                                                     <p>
+                                                                        <button class="newbut" id="myBtn">See t-shirt example</button>
+                                                                        <div id="myModal" class="modal">
+
+                                                                            <!-- Modal content -->
+                                                                            <div class="modal-content">
+                                                                              <span class="close">&times;</span>
+                                                                              <img src="https://cloud.box.com/shared/static/1rqta1lusurftjmlta4woi8hwth9kges.png">
+                                                                            </div>
+                                                                          </div>                                                 
+                                                                          <script>
+                                                                            // Get the modal
+                                                                            var modal = document.getElementById("myModal");
+                                                                            
+                                                                            // Get the button that opens the modal
+                                                                            var btn = document.getElementById("myBtn");
+                                                                            
+                                                                            // Get the <span> element that closes the modal
+                                                                            var span = document.getElementsByClassName("close")[0];
+                                                                            
+                                                                            // When the user clicks the button, open the modal 
+                                                                            btn.onclick = function() {
+                                                                              modal.style.display = "block";
+                                                                            }
+                                                                            
+                                                                            // When the user clicks on <span> (x), close the modal
+                                                                            span.onclick = function() {
+                                                                              modal.style.display = "none";
+                                                                            }
+                                                                            
+                                                                            // When the user clicks anywhere outside of the modal, close it
+                                                                            window.onclick = function(event) {
+                                                                              if (event.target == modal) {
+                                                                                modal.style.display = "none";
+                                                                              }
+                                                                            }
+                                                                            </script>   
+                                                                    </p>
+                                                                    <p>
                                                                         And of course, you get all of the previous tier's rewards too, plus an extra help request.
                                                                     </p>
                                                                     <span
@@ -485,8 +525,10 @@
                                                                 </h3>
                                                                 <div class="pledge__reward-description pledge__reward-description--expanded">
                                                                     <p>
-                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit auctor elit non interdum. Aliquam viverra hendrerit egestas. Praesent molestie ex et eros laoreet, in lobortis est tincidunt. Duis finibus urna non ipsum mattis aliquet vitae a tellus. In eleifend egestas lobortis. Sed quis tincidunt ante. Nullam ultrices placerat purus at pharetra. Phasellus tincidunt vel sem a dignissim.
-                                                                        </p>
+                                                                        Tyvek wristbands, the Nokia 3310 and diamonds; the 3 hardest things in the world as of January 2019. As of February 2019, acquiring an invitation to the BC Pub Quiz Crawl took first place. The PQC is the most sought after event in the BC calendar, where great minds and great tipplers meet for a night of quaffing and quizzing. For the price of only 100 British Pounds, 39 Kuwaiti Dinar or 2 Euros, you can get yourself <b>ALL</b> of the below, including that illustrious ticket to the PQC.
+                                                                    </p>
+                                                                    <p>What a bargain.
+                                                                    </p>
                                                                     <span
                                                                         class="itemization-includes text-uppercase c-navy-light type-10 medium track-loose block">Includes:</span>
                                                                     <ul class="type-14 ml3 green-dark mb2 pl2">
@@ -545,9 +587,7 @@
                             <div class="grid-col-12">
                                 <section class="section_footer-legal">
                                     <ul class="flex flex-wrap type-13">
-                                            <li class="mr4 mb2 mb0-sm">Trust and Safety</li>
-                                            <li class="mr4 mb2 mb0-sm">Trust and Safety</li>
-                                            <li class="mr4 mb2 mb0-sm">Trust and Safety</li>
+                                            <li class="mr4 mb2 mb0-sm">A</li>
                                     </ul>
                                 </section>
                             </div>
